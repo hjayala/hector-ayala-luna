@@ -11,9 +11,8 @@
         <section id="About">
             <h2>About</h2>
     
-            <p>Hello! My name is Hector Ayala! I am a 3rd year Computer Science student at Barry University!
-                This Fall 2025 is my first semester and I am super excited!
-            </p>
+            <p>Hello! My name is Hector Ayala! I am a 3rd year Computer Science student at Barry University!</p>
+            <p>This Fall 2025 is my first semester and I am super excited!</p>
         </section>
 
         <section id="Experience">
@@ -31,13 +30,146 @@
 
         <section id="Connect">
             <h2>Connect</h2>
-            <u1>
+            <ol>
                 <li><img src="https://images.seeklogo.com/logo-png/30/2/github-logo-png_seeklogo-304612.png" alt="LinkedIn Logo" height="15"> GitHub: @hjayala</li>
                 <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/960px-LinkedIn_logo_initials.png" alt="LinkedIn Logo" height="15"> LinkedIn: @hjayala</li>
                 <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/960px-Instagram_logo_2022.svg.png" alt="Instagram Logo" height="15"> Instagram: @hjayala</li>
-                
-            </u1>
+            </ol>
         </section>
+
+        <section id="Form">
+            <form action="example.com/path" method="post">
+                <fieldset>
+                    <legend>Contact Details</legend>
+
+                    <div>
+                        <label for="first_name">First Name:</label>
+                        <input type="text" id="first_name" placeholder="Bob..." name="first_name">
+                    </div>
+
+                    <div>
+                        <label for="last_name">Last Name:</label>
+                        <input type="text" id="last_name" placeholder="Hernandez..." name="last_name">
+                    </div>
+
+                    <div>
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" placeholder="18" name="age">
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Account Information</legend>
+                    
+                    <div>
+                        <label for="user_email">Email Address:</label>
+                        <input type="email" id="user_email" placeholder="you@example.com" name="email">
+                    </div>
+
+                    <div>
+                        <label for="user_password">Password:</label>
+                        <input type="password" id="user_password" placeholder="password">
+                    </div>
+                </fieldset>
+
+                <div>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob">
+                </div>
+
+                <div>
+                    <textarea rows="20" cols="60">Type your information here!</textarea>
+                </div>
+
+                <select name="Car">
+                    <option value="mercedes">Mercedes</option>
+                    <option value="volvo">Volvo</option>
+                    <option value="bmw">BMW</option>
+                    <option value="mini">Mini</option>
+                    <option value="ford" selected>Ford</option>
+                </select>
+
+                <select name="fashion">
+                    <optgroup label="Clothing">
+                      <option value="t_shirt">T-Shirts</option>
+                      <option value="sweater">Sweaters</option>
+                      <option value="coats">Coats</option>
+                    </optgroup>
+                    <optgroup label="Foot Wear">
+                      <option value="sneakers">Sneakers</option>
+                      <option value="boots">Boots</option>
+                      <option value="sandals">Sandals</option>
+                    </optgroup>
+                  </select>
+                  
+
+                  <h1>Ticket Type</h1>
+                
+                  <div>
+                <input type="radio" id="child" name="ticket_type" value="child">
+                <label for="child">Child</label>
+                </div>
+
+                <div>
+                <input type="radio" id="adult" name="ticket_type" value="adult">
+                <label for="adult">Adult</label>
+                </div>
+
+                <div>
+                <input type="radio" id="senior" name="ticket_type" value="senior">
+                <label for="senior">Senior</label>
+                </div>
+                
+
+                <h1>Pizza Toppings</h1>
+
+                <div>
+                <input type="checkbox" id="sausage" name="topping" value="sausage">
+                <label for="sausage">Sausage</label>
+                </div>
+
+                <div>
+                <input type="checkbox" id="onions" name="topping" value="onions">
+                <label for="onions">Onions</label>
+                </div>
+
+                <div>
+                <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
+                <label for="pepperoni">Pepperoni</label>
+                </div>
+
+                <div>
+                <input type="checkbox" id="mushrooms" name="topping" value="mushrooms">
+                <label for="mushrooms">Mushrooms</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="newsletter" name="news_letter" checked>
+                    <label for="newsletter">Send me the news letter</label>
+                </div>
+                  
+        </section>
+
+        <section id="Buttons">
+            <div>
+                <button>Click Me</button>
+            </div>
+
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+
+            <div>
+                <button type="reset">Reset</button>
+            </div>
+
+            <div>
+                <button type="button">Click to Toggle</button>
+            </div>
+            
+        </section>
+
+        </form>
 
         <section id="HectorPicture">
             <h2>This is Hector</h2>

@@ -2,44 +2,47 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>Hector Ayala's Portfolio</title>
         <meta name="author" content="Hector Ayala">
         <meta name="viewport" content="width=device-wdith, initial-scale=1.0"> 
-        <title>Hector Ayala's Portfolio</title>
-    <link rel="stylesheet" href="css/index.css">
+        <link href="css/index.css" rel="stylesheet">
     </head>
+
+    <!-- For comments use [CTRL + /] -->
+
     <body>
-        <h1>Hector Ayala</h1>
+        <h1 class="nameFormat">Hector Ayala</h1>
+
+        <section class="pictureAlignment">
+            <img class="hectorPicture" src="media/hjaPhoto.jpg"  alt="Hector Ayala in business attire" height="150">
+        </section>
 
         <section class="About">
             <h2>About</h2>
-
-            <img src="/media/hjaPhoto.jpg"alt="Picture of Hector" height="150" class="ProfilePicture">
-            
             <p>Hello! My name is Hector Ayala!</p> 
-            <p>I am a 3rd year Computer Science student at Barry University!</p>
+            <p>I am a 3rd year Computer Science student at <strong><em>Barry University!</em></strong></p>
             <p>This Fall 2025 is my first semester and I am super excited!</p>
+    
         </section>
-
         <section class="Experience">
             <h2>Experience</h2>
-    
-            <u1>
-                <li class="ExperienceItem">Code the Dream Student!</li>
-                <li class="ExperienceItem">Advanced Java OOP Programming</li>
-                <li class="ExperienceItem">Data Structures and Algorithms</li>
-                <li class="ExperienceItem">Calculus II</li>
-                <li class="ExperienceItem">Physics with Calculus II</li>
-                <li class="ExperienceItem">C# Certified</li>
-            </u1>
+            <ul class="noBullets">
+                <li class="stylizedListItem">Code the Dream Student!</li>
+                <li class="stylizedListItem">Advanced Java OOP Programming</li>
+                <li class="stylizedListItem">Data Structures and Algorithms</li>
+                <li class="stylizedListItem">Calculus II</li>
+                <li class="stylizedListItem">Physics with Calculus II</li>
+                <li class="stylizedListItem">C# Certified</li>
+            </ul>
         </section>
 
         <section class="Connect">
             <h2>Connect</h2>
-            <u1>
-                <li class="ConnectItem"><img src="https://images.seeklogo.com/logo-png/30/2/github-logo-png_seeklogo-304612.png" alt="LinkedIn Logo" height="15"> GitHub: @hjayala</li>
-                <li class="ConnectItem"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/960px-LinkedIn_logo_initials.png" alt="LinkedIn Logo" height="15"> LinkedIn: @hjayala</li>
-                <li class="ConnectItem"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/960px-Instagram_logo_2022.svg.png" alt="Instagram Logo" height="15"> Instagram: @hjayala</li>
-            </u1>
-        </section>
+            <ul class="noBullets">
+                <li class="stylizedListItem"><img src="media/github-mark.png" alt="GitHub Logo" height="15"> GitHub: <a href="https://github.com/hjayala">@hjayala</a></li>
+                <li class="stylizedListItem"><img src="media/linkedInLogoBlue.png" alt="LinkedIn Logo" height="15"> LinkedIn: <a href="https://www.linkedin.com/in/hjayala/">@hjayala</a></li>
+                <li class="stylizedListItem"><img src="media/Instagram_logo_2016.svg" alt="Instagram Logo" height="15"> Instagram: <a href="https://www.instagram.com/hjayala70/">@hjayala</a></li>
+            </ul>
+        </section>"
     </body>
 </html>

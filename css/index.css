@@ -1,86 +1,80 @@
 /* Load Roboto font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-.debug-borders * {
-    border: 2px solid red;
-}
-
-/* Change Background Color and default text color */
+/* Change background color of page body */
 body {
-    background-color: rgba(194, 238, 193, 0.13);
+    background: rgba(194, 238, 193, 0.13);
+    /* Change default text color */
     color: #2f4b68;
-    font-family: 'Poppins', Arial;
-    line-height: 1.6;
+    font-family: 'Roboto';
 }
 
 /* Add spacing between sections */
 section {
-    margin-bottom: 20px;
+    margin: 20px;
     padding: 20px;
+
     background-color: white;
+
     border-radius: 10px;
+
     box-shadow: 0 10px 2px rgba(65, 65, 65, 0.527);
 }
 
-/* Change Alignment to About section*/
+/* Change alignment to About section */
 .About {
     text-align: center;
     line-height: 1;
 }
 
-/* Change the font size, weight, and color of headings */
+/* Change font size, weight, and color of headings */
 h2 {
-    font-size: 1cm;
+    font-size: 40px;
     font-weight: 600;
-    color: rgb(122, 123, 185);
+
+    color: rgb(91, 93, 182);
+
     text-align: center;
     text-shadow: #2f4b6821 5px 5px;
 }
 
-/* Stylize of Name at top */
-h1 {
-    font-size: 6em;
+/* Transform the style of Name at top of page */
+.nameFormat {
+    font-size: 100px;
     font-weight: 600;
+
     color: rgb(80, 81, 148);
+
     text-align: center;
     text-shadow: #485f7762 5px 5px;
 }
 
-/* Remove bullet points from Experience list */
-.Experience {
-    list-style: none;
-}
-
-/* Experience styled blocks */
-.ExperienceItem {
-    text-align: center;
-    padding: 1px;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
-}
-
-/* Remove bullet points from Connect list */
-.Connect{
-    list-style: none;
-}
-
-/* Connect styled blocks */
-.ConnectItem {
-    text-align: center;
-    padding: 1px;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
-}
-
-/* Stylize Picture */
-.HectorPicture {
+/* STRETCH: Add picture of myself */
+.pictureAlignment {
     text-align: center;
 }
-.ProfilePicture {
+.hectorPicture {
+    border: 5px solid rgb(20, 25, 49);
     border-radius: 10%;
-    object-fit: cover;
-    border: 5px solid rgb(157, 165, 201);
+
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.63);
+
+    object-fit: cover;
+
+    text-align: center;
+}
+
+/* Remove bullet points from list (for both the Experience and Connect lists*/
+.noBullets {
+    list-style: none;
+}
+/* Transform the list items into styled blocks */
+.stylizedListItem {
+    text-align: center;
+    
+    padding: 2px;
+    margin: 15px 200px;
+
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }

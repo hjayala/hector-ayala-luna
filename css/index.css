@@ -22,7 +22,7 @@ section {
 }
 
 /* Change alignment to About section */
-.About {
+#About {
     text-align: center;
     line-height: 1;
 }
@@ -39,7 +39,7 @@ h2 {
 }
 
 /* Transform the style of Name at top of page */
-.nameFormat {
+#nameFormat {
     font-size: 100px;
     font-weight: 600;
 
@@ -64,17 +64,80 @@ h2 {
     text-align: center;
 }
 
-/* Remove bullet points from list (for both the Experience and Connect lists*/
-.noBullets {
-    list-style: none;
-}
-/* Transform the list items into styled blocks */
-.stylizedListItem {
-    text-align: center;
-    
-    padding: 2px;
-    margin: 15px 200px;
+/* Customizing the navigation bar using FlexBox */
+#NavContainer {
+    /* STRETCH: make navbar sticky */
+    position: sticky;
+    top: 0;
 
+    display: flex;
+
+    background-color: rgb(107, 132, 170);
+    height: 30px;
+
+    justify-content: space-around;
+}
+/* Customize links in nav bar */
+.NavItem, .NavItem a {
+    color: #ffffff;
+    
+    text-decoration: underline;
+
+    align-self: center;
+    /* border: solid 2px red; */
+}
+
+/* Customizing Experience Section using FlexBox */
+.ExperienceContainer {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* Individual Experience flex item */
+.ExperienceItem {
+    display: flex;
+
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+
+    /* Set initial size for each item */
+    flex-basis: 1000px;
+    min-width: 0;
+
+    margin: 10px 20px;
+    padding: 0 15px;
+
+    /* Nice visual */
     border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Customizing Connect Section using FlexBox */
+.ConnectContainer {
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: center;
+
+}
+/* Individual Experience flex item */
+.ConnectItem {
+    /* border: red solid 2px; */
+
+    text-align: center;
+
+    /* Set initial size for each item */
+    flex-basis: 200px;
+    min-width: 0;
+
+    /* Create separation between each item */
+    margin: 10px 20px;
+    padding: 10px 15px;
+
+    /* Nice visual */
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
 }

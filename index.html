@@ -11,38 +11,96 @@
     <!-- For comments use [CTRL + /] -->
 
     <body>
-        <h1 class="nameFormat">Hector Ayala</h1>
+        <nav id="NavContainer">
+            <div class="NavItem"><a href="#About">About</a></div>
+            <div class="NavItem"><a href="#Experience">Experience</a></div>
+            <div class="NavItem"><a href="#Skills">Skills</a></div>
+            <div class="NavItem"><a href="#Projects">Projects</a></div>
+            <div class="NavItem"><a href="#Connect">Connect</a></div>
+        </nav>
+
+        <h1 id="nameFormat">Hector Ayala</h1>
 
         <section class="pictureAlignment">
-            <img class="hectorPicture" src="media/hjaPhoto.jpg"  alt="Hector Ayala in business attire" height="150">
+            <img class="hectorPicture" src="media/hjaPhoto.jpg"  alt="Hector Ayala in business attire" height="300">
         </section>
 
-        <section class="About">
+        <section id="About">
             <h2>About</h2>
             <p>Hello! My name is Hector Ayala!</p> 
             <p>I am a 3rd year Computer Science student at <strong><em>Barry University!</em></strong></p>
             <p>This Fall 2025 is my first semester and I am super excited!</p>
     
         </section>
-        <section class="Experience">
+
+        <section id="Experience">
             <h2>Experience</h2>
-            <ul class="noBullets">
-                <li class="stylizedListItem">Code the Dream Student!</li>
-                <li class="stylizedListItem">Advanced Java OOP Programming</li>
-                <li class="stylizedListItem">Data Structures and Algorithms</li>
-                <li class="stylizedListItem">Calculus II</li>
-                <li class="stylizedListItem">Physics with Calculus II</li>
-                <li class="stylizedListItem">C# Certified</li>
+
+            <div class="ExperienceContainer">
+                
+                <div class="ExperienceItem">
+                    <h3>Code the Dream Student!</h3>
+                    <p>Intro to Programming - July, 2025</p>
+                </div>
+
+                <div class="ExperienceItem">
+                    <h3>Advanced Java OOP Programming</h3>
+                    <p>Florida International University - Spring 2025</p>
+                </div>
+
+                <div class="ExperienceItem">
+                    <h3>Data Structures and Algorithms</h3>
+                    <p>Florida International University - Spring 2025</p>
+                </div>
+
+                <div class="ExperienceItem">
+                    <h3>Calculus II</h3>
+                    <p>Miami Dade College - Fall 2023</p>
+                </div>
+
+                <div class="ExperienceItem">
+                    <h3>Physics with Calculus II</h3>
+                    <p>Miami Dade College - Fall 2024</p>
+                </div>
+
+                <div class="ExperienceItem">
+                    <h3>C# Certified</h3>
+                    <p>Foundational C# Microsoft Certification - July, 2025</p>
+                </div>
+            </div> <!-- / ExperienceContainer -->
+
+        </section>
+
+        <section id="Skills">
+            <h2>Skills</h2>
+        </section>
+
+        <section id="Projects">
+            <h2>Projects</h2>
+            <ul class="projectsList">
+                <!-- <li></li> -->
             </ul>
         </section>
 
-        <section class="Connect">
+        <section id="Connect">
             <h2>Connect</h2>
-            <ul class="noBullets">
-                <li class="stylizedListItem"><img src="media/github-mark.png" alt="GitHub Logo" height="15"> GitHub: <a href="https://github.com/hjayala">@hjayala</a></li>
-                <li class="stylizedListItem"><img src="media/linkedInLogoBlue.png" alt="LinkedIn Logo" height="15"> LinkedIn: <a href="https://www.linkedin.com/in/hjayala/">@hjayala</a></li>
-                <li class="stylizedListItem"><img src="media/Instagram_logo_2016.svg" alt="Instagram Logo" height="15"> Instagram: <a href="https://www.instagram.com/hjayala70/">@hjayala</a></li>
-            </ul>
+
+            <div class="ConnectContainer">
+
+                <div class="ConnectItem">
+                    <img src="media/github-mark.png" alt="GitHub Logo" height="15"> GitHub: <a href="https://github.com/hjayala">@hjayala</a>
+                </div>
+
+                <div class="ConnectItem">
+                    <img src="media/linkedInLogoBlue.png" alt="LinkedIn Logo" height="15"> LinkedIn: <a href="https://www.linkedin.com/in/hjayala/">@hjayala</a>
+                </div>
+
+                <div class="ConnectItem">
+                    <img src="media/Instagram_logo_2016.svg" alt="Instagram Logo" height="15"> Instagram: <a href="https://www.instagram.com/hjayala70/">@hjayala</a>
+                </div>
+
+            </div> <!-- / ConnectContainer -->
+
         </section>"
     </body>
 </html>

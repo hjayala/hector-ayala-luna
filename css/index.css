@@ -1,7 +1,9 @@
 /* Load Roboto font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* I forgot to create a new branch when working on this lesson */
+/*****************************
+********DESKTOP DESIGN********
+*****************************/
 
 /* Change background color of page body */
 body {
@@ -56,6 +58,10 @@ h2 {
     text-align: center;
 }
 .hectorPicture {
+    width: 300px;
+    height: auto;
+
+
     border: 5px solid rgb(20, 25, 49);
     border-radius: 10%;
 
@@ -116,30 +122,149 @@ h2 {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
 }
 
-/* Customizing Connect Section using FlexBox */
+/* STRETCH GOAL WEEK 10 */
+/* Customizing Connect Section using Grid */
 .ConnectContainer {
-    display: flex;
+    display: grid;
 
-    flex-direction: row;
+    grid-template-columns: auto auto auto;
 
+    column-gap: 50px;
+    
     justify-content: center;
-
 }
-/* Individual Experience flex item */
+/* Individual Connect item */
 .ConnectItem {
     /* border: red solid 2px; */
 
     text-align: center;
 
-    /* Set initial size for each item */
-    flex-basis: 200px;
-    min-width: 0;
-
-    /* Create separation between each item */
-    margin: 10px 20px;
-    padding: 10px 15px;
+    padding: 10px;
 
     /* Nice visual */
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+}
+
+/*****************************
+********TABLET DESIGN********
+*****************************/
+@media screen and (max-width: 1000px) {
+
+    /* Name heading */
+    #nameFormat {
+        font-size: 4rem;
+        text-shadow: #485f7762 3px 3px;
+    }
+
+    /* Smaller picture size */
+    .hectorPicture {
+        max-width: 250px;
+        height: auto;
+    }
+
+    /* Section headings */
+    h2 {
+        font-size: 2rem;
+        color: rgb(75, 77, 150);
+    }
+
+    /* Navigation bar */
+    #NavContainer {
+        height: 40px;
+        padding: 0.5rem 0;
+    }
+
+    /* Slightly adjust Experience items */
+    .ExperienceItem {
+        flex-basis: 45%;
+        margin: 0.75rem;
+    }
+
+    /* Slightly adjust Connect items */
+    .ConnectItem {
+        column-gap: 20px;
+    }
+
+    /* Section Spacing */
+    section {
+        margin: 1rem;
+        padding: 1.25rem;
+    }
+}
+
+/*****************************
+********MOBILE DESIGN********
+*****************************/
+
+@media screen and (max-width: 600px) {
+    
+    /* Name heading */
+    #nameFormat {
+        font-size: 2.5rem;
+        text-shadow: #485f7762 2px 2px;
+    }
+
+    /* Smaller picture size */
+    .hectorPicture {
+        max-width: 200px;
+        height: auto;
+        border-width: 3px;
+    }
+
+    /* Section headings */
+    h2 {
+        font-size: 1.75rem;
+        color: rgb(60, 62, 130);
+    }
+
+    /* Navigation bar */
+    #NavContainer {
+        flex-direction: column;
+        height: auto;
+        padding: 0.5rem 0;
+    }
+    .NavItem {
+        padding: 0.5rem 0;
+    }
+
+    /* Experience Section - stack items vertically */
+    .ExperienceContainer {
+        flex-direction: column;
+    }
+    .ExperienceItem {
+        flex-basis: 100%;
+        margin: 0.5rem 0;
+        padding: 1rem;
+    }
+
+    /* Connect Section - stack items vertically using grid */
+    .ConnectContainer {
+        display: grid;
+    
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 150px;
+
+        gap: 20px;
+        
+        justify-content: center;
+    }
+    /* Individual Connect item */
+    .ConnectItem {
+        /* border: red solid 2px; */
+    
+        text-align: center;
+    
+        padding: 5px;
+    
+        /* Nice visual */
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+    }
+
+    /* Section Spacing */
+    section {
+        margin: 0.5rem;
+        padding: 1rem;
+    }
 }

@@ -11,6 +11,8 @@ body {
     /* Change default text color */
     color: #2f4b68;
     font-family: 'Roboto';
+
+    margin: 0;
 }
 
 /* Add spacing between sections */
@@ -146,6 +148,40 @@ h2 {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
 }
 
+/* Skills design */
+#Skills > ul {
+    padding: 0; /* To remove the list automatic indentation */
+
+    /* border: red solid 1px; */
+
+    display: grid;
+    list-style: none;
+
+    grid-template-columns: auto auto auto auto;
+
+    column-gap: 100px;
+    row-gap: 30px;
+
+    justify-content: center;
+
+    > li {
+        text-align: center;
+
+        padding: 10px 50px;
+
+        /* Nice visual */
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+    }
+}
+
+/* Center footer */
+footer{
+    text-align: center;
+    font-size: 15px;
+}
+
+
 /*****************************
 ********TABLET DESIGN********
 *****************************/
@@ -191,6 +227,20 @@ h2 {
         margin: 1rem;
         padding: 1.25rem;
     }
+
+    /* Skills design */
+    #Skills > ul {
+    grid-template-columns: auto auto auto;
+
+    column-gap: 70px;
+    row-gap: 25px;
+
+    > li {
+        padding: 8px 20px;
+
+        font-size: 95%;
+    }
+}
 }
 
 /*****************************
@@ -266,5 +316,20 @@ h2 {
     section {
         margin: 0.5rem;
         padding: 1rem;
+    }
+
+    /* Skills design */
+    #Skills > ul {
+
+    grid-template-columns: auto auto;
+
+    column-gap: 20px;
+    row-gap: 25px;
+
+    > li {
+        padding: 8px 20px;
+
+        font-size: 90%;
+    }
     }
 }

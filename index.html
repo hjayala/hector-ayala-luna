@@ -18,6 +18,7 @@
             <div class="NavItem"><a href="#Skills">Skills</a></div>
             <div class="NavItem"><a href="#Projects">Projects</a></div>
             <div class="NavItem"><a href="#Connect">Connect</a></div>
+            <div class="NavItem"><a href="#LeaveMessage">Contact</a></div>
         </nav>
 
         <h1 id="nameFormat">Hector Ayala</h1>
@@ -101,7 +102,29 @@
                 </div>
 
             </div> <!-- / ConnectContainer -->
+        </section>
 
+        <section id="LeaveMessage">
+            <h2>Leave a Message</h2>
+            <form name="leave_message">
+                <label for="usersname">Name:</label>
+                <input type="text" name="usersName" required="true"><br><br>
+
+                <label for="usersEmail">Email:</label>
+                <input type="email" name="usersEmail" required="true"><br><br>
+
+                <label for="usersMessage">Message:</label><br>
+                <textArea name="usersMessage" required="true"></textArea><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="messages">
+            <h2>Messages</h2>
+            <ul>
+
+            </ul>
         </section>
     </body>
 </html>

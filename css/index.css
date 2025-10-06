@@ -181,6 +181,117 @@ footer{
     font-size: 15px;
 }
 
+/* Leave a Message Form Styling */
+#LeaveMessage form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#LeaveMessage label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: rgb(91, 93, 182);
+}
+
+#LeaveMessage input,
+#LeaveMessage textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(107, 132, 170);
+    border-radius: 8px;
+    font-family: 'Roboto';
+    font-size: 16px;
+}
+
+#LeaveMessage input:focus,
+#LeaveMessage textarea:focus {
+    outline: none;
+    border-color: rgb(91, 93, 182);
+    box-shadow: 0 0 5px rgba(91, 93, 182, 0.3);
+}
+
+#LeaveMessage textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#LeaveMessage button[type="submit"] {
+    background-color: rgb(91, 93, 182);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+#LeaveMessage button[type="submit"]:hover {
+    background-color: rgb(75, 77, 150);
+}
+
+#LeaveMessage button[type="submit"]:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Messages List Styling */
+#messages ul {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#messages li {
+    background-color: rgba(194, 238, 193, 0.2);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#messages li a {
+    color: rgb(91, 93, 182);
+    font-weight: 600;
+    text-decoration: none;
+
+    font-size: 18px;
+}
+
+#messages li a:hover {
+    text-decoration: underline;
+}
+
+#messages li span {
+    color: #2f4b68;
+    display: block;
+    margin: 8px 0;
+}
+
+#messages button {
+    background-color: rgb(107, 132, 170);
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    align-self: flex-end;
+
+    min-width: 90px;
+}
+
+#messages button:hover {
+    background-color: rgb(91, 93, 182);
+}
+
 
 /*****************************
 ********TABLET DESIGN********
@@ -239,6 +350,17 @@ footer{
         padding: 8px 20px;
 
         font-size: 95%;
+    }
+
+    #LeaveMessage input,
+    #LeaveMessage textarea {
+        font-size: 16px; /* Prevents zoom on iOS */
+        padding: 14px;
+    }
+    
+    #LeaveMessage button[type="submit"] {
+        padding: 14px 35px;
+        font-size: 17px;
     }
 }
 }
@@ -331,5 +453,31 @@ footer{
 
         font-size: 90%;
     }
+    }
+
+    #LeaveMessage form {
+        padding: 10px;
+    }
+    
+    #LeaveMessage input,
+    #LeaveMessage textarea {
+        font-size: 16px; /* Prevents zoom on mobile */
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    
+    #LeaveMessage button[type="submit"] {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+    }
+    
+    #messages li {
+        padding: 12px;
+    }
+    
+    #messages button {
+        padding: 10px 25px;
+        font-size: 15px;
     }
 }

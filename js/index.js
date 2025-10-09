@@ -136,3 +136,32 @@ function updateMessages() {
 }
 //Show/Hide Messages section upon load
 updateMessages();
+
+console.clear();
+//Fetching my repositories from GitHub
+fetch("https://api.github.com/users/hjayala/repos")
+.then(function(response){
+    return response.json();
+}).then(function(response) {
+    //Repositories array
+    const repositories = response;
+
+    console.log(repositories);
+
+    const projectSection = document.querySelector("#Projects");
+    const projectList = projectSection.querySelector(".projectsList");
+
+    //Create projects list items
+    for (var i = 0; i < repositories.length; i++)
+    {
+        console.log("Adding project number #" + i);
+
+        const project = document.createElement("li");
+
+        project.innerText = repositories[i].name;
+
+        projectList.appendChild(project);
+    }
+}).catch(function(response) {
+    console.error("Could not fetch repositories:", response);
+})

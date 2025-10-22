@@ -158,8 +158,14 @@ fetch("https://api.github.com/users/hjayala/repos")
 
         const project = document.createElement("li");
 
-        project.innerText = repositories[i].name;
+        //Create clickable repositories
+        const link = document.createElement("a");
+        link.href = repositories[i].html_url;
+        link.innerText = repositories[i].name;
+        link.target = "_blank";
 
+        //project.innerText = repositories[i].name;
+        project.appendChild(link);
         projectList.appendChild(project);
     }
 }).catch(function(response) {

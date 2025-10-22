@@ -75,8 +75,9 @@ messageForm.addEventListener("submit", (event) => {
     removeButton.type = "button";
 
     //Remove button click event
-    removeButton.addEventListener("click", () => {
-        entry = removeButton.parentNode;
+    removeButton.addEventListener("click", (e) => {
+        //Remove e's message
+        const entry = e.target.parentNode;
 
         entry.remove();
 
@@ -90,14 +91,17 @@ messageForm.addEventListener("submit", (event) => {
     editButton.type = "button";
 
     //Add functionality
-    editButton.addEventListener("click", () => {
+    editButton.addEventListener("click", (e) => {
+        //Get the message span from the clicked button's parent
+        const messageSpan = e.target.parentNode.querySelector("span");
+        const currentMessage = messageSpan.textContent;
+
         //Temporary workaround without having to add any extra interface lol:
-        const newMessageText = prompt("Edit your message:", message);
+        const newMessageText = prompt("Edit your message:", currentMessage);
 
         //If user didn't cancel and entered something
         if (newMessageText !== null && newMessageText.trim() !== "") {
-            //Update the span with the new message
-            const messageSpan = newMessage.querySelector("span");
+            //Update the spawn with the new message
             messageSpan.textContent = newMessageText;
         }
     });
